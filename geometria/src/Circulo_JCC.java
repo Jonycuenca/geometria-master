@@ -7,6 +7,10 @@ public class Circulo_JCC extends FiguraGeometrica_JCC {
 	public Circulo_JCC(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+                
+                if (r<0){
+                    Math.abs(r);
+                }
 	}
 
 	@Override
